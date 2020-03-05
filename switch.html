@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+       function  myAddition()
+       {
+           var i=parseInt(document.getElementById('n1').value);
+           var j=parseInt(document.getElementById('n2').value);
+        var n=parseInt(document.getElementById('caseno').value)
+        var res=0;
+        switch(n){
+         case 1:
+         {
+         res=i+j;
+         document.getElementById('sum').value=res;
+         break;}
+         case 2:
+         {
+         res=i-j;
+
+         break;
+         
+         }
+         case 3:
+         {
+             res=i*j;
+             break;
+         }
+         default:
+         res=1000000;}
+         sdocument.getElementById('ans').value=res;
+        }
+    </script>
+</head>
+<body>
+    number 1<input type="text"  id="n1"><br>
+    number2<input type="text"  id="n2"><br>
+    case<input type="text" id="caseno"><br>
+    result<input type="text" id="ans"><br>
+    <input type="button" name="btn" value="clicktoadd" onclick="myAddition()">
+
+</body>
+</html>

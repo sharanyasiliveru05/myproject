@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function submitdetails(){
+            var n1=document.getElementById("student").value;
+            var n2=document.getElementById("students").value;
+            var json1={name:n1,year:n2};
+            var y1=document.getElementById("student2").value;
+            var y2=document.getElementById("student21").value;
+            var json2={name:y1,year:y2};
+            document.write("<table border='2' width=50%>");
+                document.write("<tr> <td>"+json1.name+"</td><td>"+json1.year+"</td></tr>");
+                document.write("<tr> <td>"+json2.name+"</td><td>/"+json2.year+"</td></tr>");
+                document.write("</table>");
+
+        }
+    </script>
+</head>
+<body>
+    <h3>student details</h3>
+    <h3>student1</h3></br></br>
+    Name:<input type="text" id="student"></br></br>
+    year:<input type="text" id="students"></br></br>
+    mark1:<input type="text" id="student1"></br></br>
+    mark2<input type="text" id="student2"></br></br>
+    total:<input type="text" id="student3"></br></br>
+    
+    <h3>student2</h3></br></br>
+
+    Name:<input type="text" id="student2"></br></br>
+    year:<input type="text" id="student21"></br></br>
+    mark1:<input type="text" id="student22"></br></br>
+    mark2:<input type="text" id="student23"></br></br>
+    total:<input type="text" id="student24"></br></br>
+    
+    <input type="button" value="submit" onclick="submitdetails();"></br></br>
+
+</body>
+</html>
